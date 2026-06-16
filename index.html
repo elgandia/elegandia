@@ -262,13 +262,6 @@ function search(){
     <div class="store-row"><div><div class="store-name">Bol.com</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €20</div><div class="store-rating">⭐ 4.5/5</div><div class="store-price price-normal">€79,99</div><button class="btn-view">Voir →</button></div>`;
   }
 }
-  if(p==='airmax90'){
-    document.getElementById('resultsTitle').textContent='Nike Air Max 90 — Prix réels 🇧🇪';
-    document.getElementById('resultsCount').textContent='8 magasins comparés · Mis à jour aujourd\'hui';
-    document.getElementById('productName').textContent='Nike Air Max 90';
-    document.getElementById('productBrand').textContent='NIKE · Sneakers · Disponible en plusieurs coloris';
-  }
-}
 document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',function(){
   document.querySelectorAll('.lang-btn').forEach(x=>x.classList.remove('active'));
   this.classList.add('active');
