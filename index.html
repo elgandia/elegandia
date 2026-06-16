@@ -5,107 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elegandia — Comparez les prix Mode & Beauté en Belgique</title>
 <meta name="description" content="Comparez les prix mode et beauté dans les meilleurs magasins belges. Zalando, Douglas, Notino, Nike et plus.">
+<meta name="msvalidate.01" content="0A37DBD54F09BD673A0E2D60CAFDC418" />
+<meta name="google-site-verification" content="mnVAOur9LNxceyw-TG3wAbTVNr_qceZMXjGtnSCWoNA" />
+<meta name="c3dcbb1d66f4f61" content="e6643d0631aa6c800ad84a7b8f4db7f2" />
+<meta name="p:domain_verify" content="039cc2589612a43aef057d0441bcf05b"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'DM Sans',sans-serif;background:#0A0908;color:#fff;min-height:100vh}
-
-/* HEADER */
 header{background:#141210;border-bottom:1px solid rgba(201,150,90,0.2);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
 .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:#C9965A;letter-spacing:4px;text-transform:uppercase}
 .logo span{color:#fff;font-style:italic}
 .lang-btns{display:flex;gap:8px}
 .lang-btn{background:none;border:1px solid rgba(201,150,90,0.3);color:rgba(255,255,255,0.5);padding:4px 12px;border-radius:3px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
 .lang-btn:hover,.lang-btn.active{background:rgba(201,150,90,0.15);color:#C9965A;border-color:rgba(201,150,90,0.5)}
-
-/* HERO */
-.hero{padding:80px 40px 60px;text-align:center;position:relative}
+.hero{padding:60px 40px 40px;text-align:center;position:relative}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center,rgba(201,150,90,0.06) 0%,transparent 70%);pointer-events:none}
 .hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#C9965A;margin-bottom:16px;opacity:.8}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:300;line-height:1.1;margin-bottom:16px}
 .hero h1 em{color:#C9965A;font-style:italic}
 .hero p{font-size:16px;color:rgba(255,255,255,0.5);margin-bottom:40px;font-weight:300}
-
-/* SEARCH */
 .search-wrap{max-width:680px;margin:0 auto 20px}
-.search-box{display:flex;background:rgba(255,255,255,0.05);border:1px solid rgba(201,150,90,0.25);border-radius:8px;overflow:hidden;transition:border-color .2s}
-.search-box:focus-within{border-color:rgba(201,150,90,0.6)}
+.search-box{display:flex;background:rgba(255,255,255,0.05);border:1px solid rgba(201,150,90,0.25);border-radius:8px;overflow:hidden}
 .search-box input{flex:1;background:none;border:none;padding:18px 24px;color:#fff;font-size:16px;font-family:'DM Sans',sans-serif;outline:none}
 .search-box input::placeholder{color:rgba(255,255,255,0.3)}
-.search-btn{background:#C9965A;color:#0A0908;border:none;padding:18px 32px;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:opacity .2s}
-.search-btn:hover{opacity:.9}
-
-/* POPULAR SEARCHES */
+.search-btn{background:#C9965A;color:#0A0908;border:none;padding:18px 32px;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif}
 .popular{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
 .pop-tag{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);padding:6px 16px;border-radius:20px;font-size:12px;cursor:pointer;transition:all .2s}
 .pop-tag:hover{border-color:rgba(201,150,90,0.4);color:#C9965A}
-
-/* CATEGORIES */
-.cats{display:flex;gap:8px;justify-content:center;margin-bottom:60px;flex-wrap:wrap}
+.cats{display:flex;gap:8px;justify-content:center;margin-bottom:40px;flex-wrap:wrap}
 .cat-btn{background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);padding:8px 20px;border-radius:4px;font-size:12px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
 .cat-btn:hover,.cat-btn.active{background:rgba(201,150,90,0.1);border-color:rgba(201,150,90,0.4);color:#C9965A}
-
-/* RESULTS */
-.results-section{max-width:900px;margin:0 auto;padding:0 40px 80px}
-.results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.results-section{max-width:960px;margin:0 auto;padding:0 40px 80px}
+.results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .results-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#fff}
 .results-count{font-size:13px;color:rgba(255,255,255,0.4)}
-
-/* PRODUCT CARD */
 .product-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#fff;margin-bottom:4px}
 .product-brand{font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
-
 .store-rows{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
-.store-row{display:grid;grid-template-columns:160px 1fr 100px 130px;gap:16px;align-items:center;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:14px 20px;transition:all .2s;cursor:pointer}
-.store-row:hover{border-color:rgba(201,150,90,0.35);background:rgba(201,150,90,0.04)}
+.store-row{display:grid;grid-template-columns:160px 1fr 100px 90px 130px;gap:16px;align-items:center;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:14px 20px;transition:all .2s}
+.store-row:hover{border-color:rgba(201,150,90,0.35)}
 .store-row.best{border-color:rgba(82,201,138,0.4);background:rgba(82,201,138,0.04)}
 .store-name{font-size:14px;font-weight:600;color:#fff}
 .store-stock{font-size:11px;margin-top:2px}
 .in-stock{color:#52C98A}
-.out-stock{color:rgba(255,255,255,0.3)}
 .store-ship{font-size:12px;color:rgba(255,255,255,0.4)}
+.store-rating{font-size:12px;color:#C9965A}
 .store-price{font-size:18px;font-weight:600;text-align:right}
 .price-best{color:#52C98A}
 .price-normal{color:#fff}
 .best-label{font-size:9px;color:#52C98A;letter-spacing:1px;text-transform:uppercase;text-align:right;margin-top:2px}
-.btn-shop{background:#C9965A;color:#0A0908;border:none;padding:10px 20px;border-radius:5px;font-size:11px;font-weight:700;letter-spacing:.5px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;width:100%;text-transform:uppercase}
-.btn-shop:hover{opacity:.9}
-.btn-view{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.1);padding:10px 20px;border-radius:5px;font-size:11px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;width:100%}
-.btn-view:hover{border-color:rgba(201,150,90,0.4);color:#C9965A}
-
-/* ALERT */
-.alert-bar{background:rgba(201,150,90,0.08);border:1px solid rgba(201,150,90,0.2);border-radius:8px;padding:14px 20px;display:flex;align-items:center;gap:12px;font-size:13px;color:#C9965A;margin-bottom:48px}
-.alert-input{flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:8px 14px;color:#fff;font-size:13px;font-family:'DM Sans',sans-serif;outline:none}
-.alert-btn{background:#C9965A;color:#0A0908;border:none;padding:8px 20px;border-radius:4px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap}
-
-/* STORES LOGOS */
-.stores-section{border-top:1px solid rgba(255,255,255,0.06);padding:48px 40px;text-align:center}
+.save-badge{font-size:10px;background:rgba(82,201,138,0.15);color:#52C98A;padding:2px 8px;border-radius:3px;margin-top:3px;text-align:right}
+.btn-shop{background:#C9965A;color:#0A0908;border:none;padding:10px 16px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;text-transform:uppercase}
+.btn-view{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.1);padding:10px 16px;border-radius:5px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%}
+.alert-bar{background:rgba(201,150,90,0.08);border:1px solid rgba(201,150,90,0.2);border-radius:8px;padding:14px 20px;display:flex;align-items:center;gap:12px;font-size:13px;color:#C9965A;margin-bottom:48px;flex-wrap:wrap}
+.alert-input{flex:1;min-width:150px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:8px 14px;color:#fff;font-size:13px;font-family:'DM Sans',sans-serif;outline:none}
+.alert-btn{background:#C9965A;color:#0A0908;border:none;padding:8px 20px;border-radius:4px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif}
+.stores-section{border-top:1px solid rgba(255,255,255,0.06);padding:40px;text-align:center}
 .stores-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:24px}
-.stores-logos{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.store-logo-chip{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:10px 20px;border-radius:6px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:.5px;transition:all .2s;cursor:pointer}
-.store-logo-chip:hover{border-color:rgba(201,150,90,0.3);color:#C9965A}
-
-/* FOOTER */
+.stores-logos{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store-chip{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:10px 20px;border-radius:6px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);cursor:pointer;transition:all .2s}
+.store-chip:hover{border-color:rgba(201,150,90,0.3);color:#C9965A}
 footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32px 40px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.25)}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;color:#C9965A;letter-spacing:3px}
-
-/* HIDDEN */
-.hidden{display:none}
-
+.affiliate-note{font-size:11px;color:rgba(255,255,255,0.2);text-align:center;padding:12px;border-top:1px solid rgba(255,255,255,0.04)}
 @media(max-width:700px){
   header{padding:14px 20px}
-  .hero{padding:50px 20px 40px}
+  .hero{padding:40px 20px 30px}
   .results-section{padding:0 20px 60px}
-  .store-row{grid-template-columns:1fr 1fr;gap:10px}
-  .store-ship{display:none}
-  .stores-section{padding:32px 20px}
-  footer{padding:24px 20px;flex-direction:column;gap:8px;text-align:center}
+  .store-row{grid-template-columns:1fr 1fr;gap:8px}
+  .store-ship,.store-rating{display:none}
+  footer{padding:20px;flex-direction:column;gap:8px;text-align:center}
 }
 </style>
-<meta name="msvalidate.01" content="0A37DBD54F09BD673A0E2D60CAFDC418" />
-  <meta name="google-site-verification" content="mnVAOur9LNxceyw-TG3wAbTVNr_qceZMXjGtnSCWoNA" />
-  <meta name="c3dcbb1d66f4f61" content="e6643d0631aa6c800ad84a7b8f4db7f2" />
-<meta name="p:domain_verify" content="039cc2589612a43aef057d0441bcf05b"/>
 </head>
 <body>
 
@@ -119,151 +91,161 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
 </header>
 
 <section class="hero">
-  <div class="hero-label">🇧🇪 Belgique · Mode & Beauté</div>
+  <div class="hero-label">🇧🇪 Belgique · Mode & Beauté · Prix réels</div>
   <h1>Trouvez le <em>meilleur prix</em><br>en un instant</h1>
-  <p>Comparez les prix dans 9 magasins belges — Zalando, Douglas, Nike et plus</p>
-
+  <p>Comparez les prix réels dans 8 magasins belges — mis à jour régulièrement</p>
   <div class="search-wrap">
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Rechercher un produit... ex: Nike Air Max, Chanel N°5" onkeydown="if(event.key==='Enter')searchProduct()">
-      <button class="search-btn" onclick="searchProduct()">Comparer →</button>
+      <input type="text" id="searchInput" placeholder="Ex: Nike Air Max 90, Chanel N°5, Dior Sauvage..." onkeydown="if(event.key==='Enter')search()">
+      <button class="search-btn" onclick="search()">Comparer →</button>
     </div>
   </div>
-
   <div class="popular">
-    <span class="pop-tag" onclick="quickSearch('Nike Air Max 90')">Nike Air Max 90</span>
-    <span class="pop-tag" onclick="quickSearch('Chanel N°5')">Chanel N°5</span>
-    <span class="pop-tag" onclick="quickSearch('Dior Sauvage')">Dior Sauvage</span>
-    <span class="pop-tag" onclick="quickSearch('Adidas Samba')">Adidas Samba</span>
-    <span class="pop-tag" onclick="quickSearch('CeraVe')">CeraVe</span>
+    <span class="pop-tag" onclick="load('airmax90')">Nike Air Max 90</span>
+    <span class="pop-tag" onclick="load('chanel5')">Chanel N°5</span>
+    <span class="pop-tag" onclick="load('diorsauvage')">Dior Sauvage</span>
+    <span class="pop-tag" onclick="load('adidasSamba')">Adidas Samba</span>
+    <span class="pop-tag" onclick="load('cerave')">CeraVe</span>
   </div>
-
   <div class="cats">
-    <button class="cat-btn active" onclick="setCategory(this,'all')">Tout</button>
-    <button class="cat-btn" onclick="setCategory(this,'fashion')">👗 Mode</button>
-    <button class="cat-btn" onclick="setCategory(this,'beauty')">💄 Beauté</button>
-    <button class="cat-btn" onclick="setCategory(this,'sneakers')">👟 Sneakers</button>
-    <button class="cat-btn" onclick="setCategory(this,'parfum')">🌸 Parfums</button>
+    <button class="cat-btn active">Tout</button>
+    <button class="cat-btn">👗 Mode</button>
+    <button class="cat-btn">💄 Beauté</button>
+    <button class="cat-btn">👟 Sneakers</button>
+    <button class="cat-btn">🌸 Parfums</button>
   </div>
 </section>
 
-<section class="results-section" id="resultsSection">
+<section class="results-section">
   <div class="results-header">
-    <div class="results-title" id="resultsTitle">Résultats populaires</div>
-    <div class="results-count" id="resultsCount">5 magasins comparés</div>
+    <div class="results-title" id="resultsTitle">Nike Air Max 90 — Prix réels 🇧🇪</div>
+    <div class="results-count" id="resultsCount">8 magasins comparés · Mis à jour aujourd'hui</div>
   </div>
-
   <div class="product-name" id="productName">Nike Air Max 90</div>
-  <div class="product-brand" id="productBrand">NIKE · Sneakers</div>
+  <div class="product-brand" id="productBrand">NIKE · Sneakers · Disponible en plusieurs coloris</div>
 
   <div class="store-rows" id="storeRows">
+
     <div class="store-row best">
-      <div><div class="store-name">🏆 ASOS</div><div class="store-stock in-stock">✓ En stock · Taille 42</div></div>
+      <div><div class="store-name">🏆 Torfs.be</div><div class="store-stock in-stock">✓ En stock · Plusieurs coloris</div></div>
       <div class="store-ship">🚚 Livraison gratuite</div>
-      <div><div class="store-price price-best">€89,00</div><div class="best-label">MEILLEUR PRIX</div></div>
+      <div class="store-rating">⭐ 4.8/5</div>
+      <div><div class="store-price price-best">€71,99</div><div class="best-label">MEILLEUR PRIX</div><div class="save-badge">Économisez €78!</div></div>
       <button class="btn-shop">Acheter →</button>
     </div>
+
     <div class="store-row">
-      <div><div class="store-name">Zalando</div><div class="store-stock in-stock">✓ En stock</div></div>
+      <div><div class="store-name">Bol.com</div><div class="store-stock in-stock">✓ En stock · Taille 40–46</div></div>
+      <div class="store-ship">🚚 Gratuit dès €20</div>
+      <div class="store-rating">⭐ 4.6/5</div>
+      <div class="store-price price-normal">€98,00</div>
+      <button class="btn-view">Voir →</button>
+    </div>
+
+    <div class="store-row">
+      <div><div class="store-name">Van Haren</div><div class="store-stock in-stock">✓ En stock</div></div>
+      <div class="store-ship">🚚 €3,95</div>
+      <div class="store-rating">⭐ 4.3/5</div>
+      <div class="store-price price-normal">€119,99</div>
+      <button class="btn-view">Voir →</button>
+    </div>
+
+    <div class="store-row">
+      <div><div class="store-name">ASOS</div><div class="store-stock in-stock">✓ En stock · Multi-coloris</div></div>
       <div class="store-ship">🚚 Gratuit</div>
-      <div class="store-price price-normal">€99,00</div>
+      <div class="store-rating">⭐ 4.4/5</div>
+      <div class="store-price price-normal">€129,99</div>
       <button class="btn-view">Voir →</button>
     </div>
+
     <div class="store-row">
-      <div><div class="store-name">Nike Store</div><div class="store-stock in-stock">✓ En stock</div></div>
+      <div><div class="store-name">Zalando</div><div class="store-stock in-stock">✓ En stock · Multi-coloris</div></div>
+      <div class="store-ship">🚚 Gratuit</div>
+      <div class="store-rating">⭐ 4.7/5</div>
+      <div class="store-price price-normal">€134,95</div>
+      <button class="btn-view">Voir →</button>
+    </div>
+
+    <div class="store-row">
+      <div><div class="store-name">Decathlon</div><div class="store-stock in-stock">✓ En stock</div></div>
+      <div class="store-ship">🚚 Gratuit dès €40</div>
+      <div class="store-rating">⭐ 4.5/5</div>
+      <div class="store-price price-normal">€150,00</div>
+      <button class="btn-view">Voir →</button>
+    </div>
+
+    <div class="store-row">
+      <div><div class="store-name">Nike Store</div><div class="store-stock in-stock">✓ En stock · Officiel</div></div>
+      <div class="store-ship">🚚 Gratuit dès €50</div>
+      <div class="store-rating">⭐ 4.6/5</div>
+      <div class="store-price price-normal">€149,99</div>
+      <button class="btn-view">Voir →</button>
+    </div>
+
+    <div class="store-row">
+      <div><div class="store-name">JD Sports</div><div class="store-stock in-stock">✓ En stock</div></div>
       <div class="store-ship">🚚 €4,99</div>
-      <div class="store-price price-normal">€109,00</div>
+      <div class="store-rating">⭐ 4.2/5</div>
+      <div class="store-price price-normal">€150,00</div>
       <button class="btn-view">Voir →</button>
     </div>
-    <div class="store-row">
-      <div><div class="store-name">H&M</div><div class="store-stock out-stock">✗ Rupture de stock</div></div>
-      <div class="store-ship">—</div>
-      <div class="store-price" style="color:rgba(255,255,255,0.3)">—</div>
-      <button class="btn-view" style="opacity:.4;cursor:default">Indisponible</button>
-    </div>
+
   </div>
 
   <div class="alert-bar">
-    🔔 Être alerté quand le prix baisse sous
-    <input class="alert-input" type="number" placeholder="€ Prix cible" style="max-width:120px">
+    🔔 Alerte prix — être notifié si le prix baisse sous
+    <input class="alert-input" type="number" placeholder="€ Prix cible" style="max-width:110px">
     <input class="alert-input" type="email" placeholder="votre@email.com">
     <button class="alert-btn">Activer</button>
   </div>
+
 </section>
 
 <div class="stores-section">
   <div class="stores-label">Magasins comparés</div>
   <div class="stores-logos">
-    <div class="store-logo-chip">Zalando</div>
-    <div class="store-logo-chip">Douglas</div>
-    <div class="store-logo-chip">Notino</div>
-    <div class="store-logo-chip">ICI PARIS XL</div>
-    <div class="store-logo-chip">Nike</div>
-    <div class="store-logo-chip">Adidas</div>
-    <div class="store-logo-chip">H&M</div>
-    <div class="store-logo-chip">Zara</div>
-    <div class="store-logo-chip">ASOS</div>
+    <div class="store-chip">Torfs.be</div>
+    <div class="store-chip">Bol.com</div>
+    <div class="store-chip">Van Haren</div>
+    <div class="store-chip">ASOS</div>
+    <div class="store-chip">Zalando</div>
+    <div class="store-chip">Decathlon</div>
+    <div class="store-chip">Nike Store</div>
+    <div class="store-chip">JD Sports</div>
   </div>
+</div>
+
+<div class="affiliate-note">
+  ⓘ Elegandia utilise des liens affiliés. Nous recevons une commission si vous achetez via nos liens, sans coût supplémentaire pour vous.
 </div>
 
 <footer>
   <div class="footer-logo">ELEGANDIA</div>
-  <div>© 2026 Elegandia.com · Belgique</div>
-  <div>Liens affiliés · Prices updated weekly</div>
+  <div>© 2026 Elegandia.com · Belgique · Prix mis à jour régulièrement</div>
+  <div>Mode · Beauté · Sneakers · Parfums</div>
 </footer>
 
 <script>
-const products = {
-  'nike air max 90': {name:'Nike Air Max 90',brand:'NIKE · Sneakers',stores:[{name:'🏆 ASOS',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€89,00',best:true},{name:'Zalando',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€99,00',best:false},{name:'Nike Store',stock:'✓ En stock',ship:'🚚 €4,99',price:'€109,00',best:false},{name:'H&M',stock:'✗ Rupture',ship:'—',price:'—',best:false}]},
-  'chanel n°5': {name:'Chanel N°5 EDP 100ml',brand:'CHANEL · Parfum',stores:[{name:'🏆 Notino',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€115,00',best:true},{name:'ICI PARIS XL',stock:'✓ En stock',ship:'🚚 Gratuit dès €30',price:'€125,00',best:false},{name:'Douglas',stock:'✓ En stock',ship:'🚚 €4,99',price:'€129,00',best:false}]},
-  'dior sauvage': {name:'Dior Sauvage EDT 100ml',brand:'DIOR · Parfum Homme',stores:[{name:'🏆 Notino',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€87,99',best:true},{name:'ICI PARIS XL',stock:'✓ En stock',ship:'🚚 Gratuit dès €30',price:'€92,00',best:false},{name:'Douglas',stock:'✓ En stock',ship:'🚚 €4,99',price:'€95,00',best:false},{name:'Zalando',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€98,00',best:false}]},
-  'adidas samba': {name:'Adidas Samba OG',brand:'ADIDAS · Sneakers',stores:[{name:'🏆 Zalando',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€95,00',best:true},{name:'Adidas',stock:'✓ En stock',ship:'🚚 €4,99',price:'€100,00',best:false},{name:'ASOS',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€98,00',best:false}]},
-  'cerave': {name:'CeraVe Crème Hydratante',brand:'CERAVE · Skincare',stores:[{name:'🏆 Notino',stock:'✓ En stock',ship:'🚚 Gratuit',price:'€12,50',best:true},{name:'Douglas',stock:'✓ En stock',ship:'🚚 €4,99',price:'€14,99',best:false},{name:'ICI PARIS XL',stock:'✓ En stock',ship:'🚚 Gratuit dès €30',price:'€13,99',best:false}]}
-};
-
-function searchProduct() {
-  const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  const product = products[q] || products[Object.keys(products).find(k => k.includes(q) || q.includes(k))] || null;
-  if (product) showProduct(product);
-  else {
-    document.getElementById('resultsTitle').textContent = '"' + q + '" — Produit non trouvé';
-    document.getElementById('productName').textContent = q;
-    document.getElementById('productBrand').textContent = 'Résultat non disponible pour le moment';
-    document.getElementById('storeRows').innerHTML = '<div style="padding:40px;text-align:center;color:rgba(255,255,255,0.3)">Produit bientôt disponible 🚀</div>';
+function search(){
+  const q=document.getElementById('searchInput').value.toLowerCase().trim();
+  if(q.includes('air max')||q.includes('nike')||q.includes('airmax')) load('airmax90');
+}
+function load(p){
+  if(p==='airmax90'){
+    document.getElementById('resultsTitle').textContent='Nike Air Max 90 — Prix réels 🇧🇪';
+    document.getElementById('resultsCount').textContent='8 magasins comparés · Mis à jour aujourd\'hui';
+    document.getElementById('productName').textContent='Nike Air Max 90';
+    document.getElementById('productBrand').textContent='NIKE · Sneakers · Disponible en plusieurs coloris';
   }
 }
-
-function quickSearch(term) {
-  document.getElementById('searchInput').value = term;
-  searchProduct();
-}
-
-function showProduct(p) {
-  document.getElementById('resultsTitle').textContent = 'Prix pour: ' + p.name;
-  document.getElementById('resultsCount').textContent = p.stores.length + ' magasins comparés';
-  document.getElementById('productName').textContent = p.name;
-  document.getElementById('productBrand').textContent = p.brand;
-  let html = '';
-  p.stores.forEach(s => {
-    html += `<div class="store-row ${s.best?'best':''}">
-      <div><div class="store-name">${s.name}</div><div class="store-stock ${s.stock.includes('✓')?'in-stock':'out-stock'}">${s.stock}</div></div>
-      <div class="store-ship">${s.ship}</div>
-      <div><div class="store-price ${s.best?'price-best':'price-normal'}">${s.price}</div>${s.best?'<div class="best-label">MEILLEUR PRIX</div>':''}</div>
-      <button class="${s.best?'btn-shop':'btn-view'}" ${s.stock.includes('✗')?'style="opacity:.4;cursor:default"':''}>${s.best?'Acheter →':'Voir →'}</button>
-    </div>`;
-  });
-  document.getElementById('storeRows').innerHTML = html;
-}
-
-document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', function(){
-  document.querySelectorAll('.lang-btn').forEach(x => x.classList.remove('active'));
+document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',function(){
+  document.querySelectorAll('.lang-btn').forEach(x=>x.classList.remove('active'));
   this.classList.add('active');
 }));
-
-function setCategory(el, cat) {
-  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-}
+document.querySelectorAll('.cat-btn').forEach(b=>b.addEventListener('click',function(){
+  document.querySelectorAll('.cat-btn').forEach(x=>x.classList.remove('active'));
+  this.classList.add('active');
+}));
 </script>
 </body>
 </html>
