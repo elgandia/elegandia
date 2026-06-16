@@ -229,8 +229,37 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
 function search(){
   const q=document.getElementById('searchInput').value.toLowerCase().trim();
   if(q.includes('air max')||q.includes('nike')||q.includes('airmax')) load('airmax90');
+} 
+  function load(p){
+  if(p==='airmax90'){
+    document.getElementById('resultsTitle').textContent='Nike Air Max 90 — Prix réels 🇧🇪';
+    document.getElementById('resultsCount').textContent='8 magasins comparés · Mis à jour aujourd\'hui';
+    document.getElementById('productName').textContent='Nike Air Max 90';
+    document.getElementById('productBrand').textContent='NIKE · Sneakers · Disponible en plusieurs coloris';
+    document.getElementById('storeRows').innerHTML=`
+    <div class="store-row best"><div><div class="store-name">🏆 Torfs.be</div><div class="store-stock in-stock">✓ En stock · Plusieurs coloris</div></div><div class="store-ship">🚚 Livraison gratuite</div><div class="store-rating">⭐ 4.8/5</div><div><div class="store-price price-best">€71,99</div><div class="best-label">MEILLEUR PRIX</div><div class="save-badge">Économisez €78!</div></div><button class="btn-shop">Acheter →</button></div>
+    <div class="store-row"><div><div class="store-name">Bol.com</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €20</div><div class="store-rating">⭐ 4.6/5</div><div class="store-price price-normal">€98,00</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Van Haren</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 €3,95</div><div class="store-rating">⭐ 4.3/5</div><div class="store-price price-normal">€119,99</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">ASOS</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit</div><div class="store-rating">⭐ 4.4/5</div><div class="store-price price-normal">€129,99</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Zalando</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit</div><div class="store-rating">⭐ 4.7/5</div><div class="store-price price-normal">€134,95</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Decathlon</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €40</div><div class="store-rating">⭐ 4.5/5</div><div class="store-price price-normal">€150,00</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Nike Store</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €50</div><div class="store-rating">⭐ 4.6/5</div><div class="store-price price-normal">€149,99</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">JD Sports</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 €4,99</div><div class="store-rating">⭐ 4.2/5</div><div class="store-price price-normal">€150,00</div><button class="btn-view">Voir →</button></div>`;
+  }
+  if(p==='chanel5'){
+    document.getElementById('resultsTitle').textContent='Chanel N°5 Body Lotion 200ml — Prix réels 🇧🇪';
+    document.getElementById('resultsCount').textContent='6 magasins comparés · Mis à jour aujourd\'hui';
+    document.getElementById('productName').textContent='Chanel N°5 Body Lotion 200ml';
+    document.getElementById('productBrand').textContent='CHANEL · Beauté · Soin du Corps';
+    document.getElementById('storeRows').innerHTML=`
+    <div class="store-row best"><div><div class="store-name">🏆 Amazon</div><div class="store-stock in-stock">✓ En stock · Livraison rapide</div></div><div class="store-ship">🚚 Gratuit Prime</div><div class="store-rating">⭐ 4.7/5</div><div><div class="store-price price-best">€59,50</div><div class="best-label">MEILLEUR PRIX</div><div class="save-badge">Économisez €20!</div></div><button class="btn-shop">Acheter →</button></div>
+    <div class="store-row"><div><div class="store-name">Easy Cosmetic</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €25</div><div class="store-rating">⭐ 4.5/5</div><div class="store-price price-normal">€63,99</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Douglas</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €30</div><div class="store-rating">⭐ 4.6/5</div><div class="store-price price-normal">€70,00</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Chanel.com</div><div class="store-stock in-stock">✓ En stock · Officiel</div></div><div class="store-ship">🚚 Gratuit</div><div class="store-rating">⭐ 4.9/5</div><div class="store-price price-normal">€70,00</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">ICI PARIS XL</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €30</div><div class="store-rating">⭐ 4.6/5</div><div class="store-price price-normal">€70,00</div><button class="btn-view">Voir →</button></div>
+    <div class="store-row"><div><div class="store-name">Bol.com</div><div class="store-stock in-stock">✓ En stock</div></div><div class="store-ship">🚚 Gratuit dès €20</div><div class="store-rating">⭐ 4.5/5</div><div class="store-price price-normal">€79,99</div><button class="btn-view">Voir →</button></div>`;
+  }
 }
-function load(p){
   if(p==='airmax90'){
     document.getElementById('resultsTitle').textContent='Nike Air Max 90 — Prix réels 🇧🇪';
     document.getElementById('resultsCount').textContent='8 magasins comparés · Mis à jour aujourd\'hui';
