@@ -206,7 +206,7 @@ const products = {
       {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€116,41', best:false}
     ]
   },
- adidasSamba: {
+  adidasSamba: {
     title: 'Adidas Samba OG — Prix réels 🇧🇪',
     count: '7 magasins · Mis à jour aujourd\'hui',
     name: 'Adidas Samba OG',
@@ -248,9 +248,8 @@ const products = {
       {name:'Newpharma', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€12,45', best:false},
       {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€13,50', best:false},
       {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€16,88', best:false},
-      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€21,99', best:false}  
+      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€21,99', best:false}
     ]
-  }
   },
   airforce1: {
     title: 'Nike Air Force 1 \'07 Men — Prix réels 🇧🇪',
@@ -267,7 +266,9 @@ const products = {
       {name:'Courir', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false},
       {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€129,98', best:false}
     ]
-    },
+  }
+};
+
 function showProduct(id) {
   const p = products[id];
   if (!p) return;
