@@ -105,6 +105,7 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
     <span class="pop-tag" onclick="showProduct('diorsauvage')">Dior Sauvage</span>
     <span class="pop-tag" onclick="showProduct('adidasSamba')">Adidas Samba</span>
     <span class="pop-tag" onclick="showProduct('adidasgazelle')">Adidas Gazelle</span>
+  <span class="pop-tag" onclick="showProduct('airforce1')">Nike Air Force 1</span>
   </div>
   <div class="cats">
     <button class="cat-btn active" onclick="setCat(this)">Tout</button>
@@ -295,6 +296,7 @@ function doSearch() {
   else if (q.includes('samba')) showProduct('adidasSamba');
   else if (q.includes('gazelle') || q.includes('adidas gazelle')) showProduct('adidasgazelle');
   else if (q.includes('cerave')) showProduct('cerave');
+  else if (q.includes('air force') || q.includes('airforce')) showProduct('airforce1');
 }
 
 function setCat(el) {
