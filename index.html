@@ -306,9 +306,71 @@ function setCat(el) {
   el.classList.add('active');
 }
 
+const translations = {
+  FR: {
+    heroLabel: '🇧🇪 Belgique · Mode & Beauté · Prix réels',
+    heroTitle: 'Trouvez le <em>meilleur prix</em><br>en un instant',
+    heroSub: 'Comparez les prix réels dans 8+ magasins belges — mis à jour régulièrement',
+    searchPlaceholder: 'Ex: Nike Air Max 90, Chanel N°5...',
+    searchBtn: 'Comparer →',
+    alertText: '🔔 Alerte prix — notifié si le prix baisse sous',
+    alertPrice: '€ Prix cible',
+    alertEmail: 'votre@email.com',
+    alertBtn: 'Activer',
+    storesLabel: 'Magasins comparés',
+    footerRight: 'Mode · Beauté · Sneakers · Parfums',
+    affiliate: 'ⓘ Elegandia utilise des liens affiliés. Commission sans coût supplémentaire pour vous.',
+    cats: ['Tout', '👗 Mode', '💄 Beauté', '👟 Sneakers', '🌸 Parfums']
+  },
+  NL: {
+    heroLabel: '🇧🇪 België · Mode & Beauty · Echte prijzen',
+    heroTitle: 'Vind de <em>beste prijs</em><br>in één klik',
+    heroSub: 'Vergelijk echte prijzen in 8+ Belgische winkels — regelmatig bijgewerkt',
+    searchPlaceholder: 'Bijv: Nike Air Max 90, Chanel N°5...',
+    searchBtn: 'Vergelijk →',
+    alertText: '🔔 Prijsalert — word gewaarschuwd als de prijs daalt onder',
+    alertPrice: '€ Doelprijs',
+    alertEmail: 'uw@email.com',
+    alertBtn: 'Activeren',
+    storesLabel: 'Vergeleken winkels',
+    footerRight: 'Mode · Beauty · Sneakers · Parfums',
+    affiliate: 'ⓘ Elegandia gebruikt affiliate links. Commissie zonder extra kosten voor u.',
+    cats: ['Alles', '👗 Mode', '💄 Beauty', '👟 Sneakers', '🌸 Parfums']
+  },
+  EN: {
+    heroLabel: '🇧🇪 Belgium · Fashion & Beauty · Real prices',
+    heroTitle: 'Find the <em>best price</em><br>instantly',
+    heroSub: 'Compare real prices across 8+ Belgian stores — updated regularly',
+    searchPlaceholder: 'e.g: Nike Air Max 90, Chanel N°5...',
+    searchBtn: 'Compare →',
+    alertText: '🔔 Price alert — notify me when price drops below',
+    alertPrice: '€ Target price',
+    alertEmail: 'your@email.com',
+    alertBtn: 'Activate',
+    storesLabel: 'Stores compared',
+    footerRight: 'Fashion · Beauty · Sneakers · Perfumes',
+    affiliate: 'ⓘ Elegandia uses affiliate links. Commission at no extra cost to you.',
+    cats: ['All', '👗 Fashion', '💄 Beauty', '👟 Sneakers', '🌸 Perfumes']
+  }
+};
+
+function setLang(lang) {
+  const t = translations[lang];
+  document.querySelector('.hero-label').textContent = t.heroLabel;
+  document.querySelector('.hero h1').innerHTML = t.heroTitle;
+  document.querySelector('.hero p').textContent = t.heroSub;
+  document.getElementById('searchInput').placeholder = t.searchPlaceholder;
+  document.querySelector('.search-btn').textContent = t.searchBtn;
+  document.querySelector('.stores-label').textContent = t.storesLabel;
+  document.querySelector('.affiliate-note').textContent = t.affiliate;
+  document.querySelector('.footer-logo').nextElementSibling.nextElementSibling.textContent = t.footerRight;
+  document.querySelectorAll('.cat-btn').forEach((b, i) => b.textContent = t.cats[i]);
+}
+
 document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', function() {
   document.querySelectorAll('.lang-btn').forEach(x => x.classList.remove('active'));
   this.classList.add('active');
+  setLang(this.textContent.trim());
 }));
 
 showProduct('airmax90');
