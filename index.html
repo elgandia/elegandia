@@ -297,7 +297,8 @@ function showProduct(id) {
 
 function doSearch() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  if (q.includes('nike') || q.includes('air max')) showProduct('airmax90');
+  if (q.includes('air force') || q.includes('airforce') || q.includes('force 1')) showProduct('airforce1');
+  else if (q.includes('air max') || (q.includes('nike') && !q.includes('force'))) showProduct('airmax90');
   else if (q.includes('chanel') || q.includes('n5') || q.includes('n°5')) showProduct('chanel5');
   else if (q.includes('dior') || q.includes('sauvage')) showProduct('diorsauvage');
   else if (q.includes('samba')) showProduct('adidasSamba');
