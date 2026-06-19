@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique Cookies — Elegandia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#0A0908;color:#fff;min-height:100vh}
+header{background:#141210;border-bottom:1px solid rgba(201,150,90,0.2);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:#C9965A;letter-spacing:4px;text-transform:uppercase;text-decoration:none}
+.logo span{color:#fff;font-style:italic}
+.back{font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color .2s}
+.back:hover{color:#C9965A}
+.content{max-width:800px;margin:0 auto;padding:60px 40px}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:#C9965A;margin-bottom:8px}
+.page-date{font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:48px;letter-spacing:1px}
+h2{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:#fff;margin:36px 0 12px;padding-bottom:8px;border-bottom:1px solid rgba(201,150,90,0.2)}
+p{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:16px}
+ul{margin:0 0 16px 20px}
+ul li{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:6px}
+a{color:#C9965A;text-decoration:none}
+a:hover{text-decoration:underline}
+.highlight{background:rgba(201,150,90,0.08);border:1px solid rgba(201,150,90,0.2);border-radius:8px;padding:20px;margin:24px 0}
+.highlight p{margin:0;color:rgba(255,255,255,0.7)}
+.cookie-table{width:100%;border-collapse:collapse;margin:20px 0}
+.cookie-table th{background:rgba(201,150,90,0.1);border:1px solid rgba(255,255,255,0.07);padding:12px 16px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#C9965A;text-align:left}
+.cookie-table td{border:1px solid rgba(255,255,255,0.07);padding:12px 16px;font-size:13px;color:rgba(255,255,255,0.6)}
+.cookie-table tr:hover td{background:rgba(255,255,255,0.02)}
+.toggle-section{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:28px;margin:24px 0}
+.toggle-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.toggle-title{font-size:15px;font-weight:600;color:#fff}
+.toggle-sub{font-size:12px;color:rgba(255,255,255,0.3);margin-top:4px}
+.toggle{width:44px;height:24px;background:rgba(255,255,255,0.1);border-radius:12px;position:relative;cursor:pointer;transition:background .2s}
+.toggle.on{background:#C9965A}
+.toggle::after{content:'';width:18px;height:18px;background:#fff;border-radius:50%;position:absolute;top:3px;left:3px;transition:left .2s}
+.toggle.on::after{left:23px}
+.toggle.disabled{opacity:.4;cursor:not-allowed}
+.save-btn{background:#C9965A;color:#0A0908;border:none;padding:12px 28px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:16px}
+footer{border-top:1px solid rgba(255,255,255,0.06);padding:32px 40px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.25);margin-top:80px}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;color:#C9965A;letter-spacing:3px}
+@media(max-width:700px){
+  header{padding:14px 20px}
+  .content{padding:40px 20px}
+  .cookie-table{font-size:12px}
+  footer{padding:20px;flex-direction:column;gap:8px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Elegan<span>dia</span></a>
+  <a href="/" class="back">← Retour</a>
+</header>
+
+<div class="content">
+  <div class="page-title">Politique Cookies</div>
+  <div class="page-date">Dernière mise à jour: Juin 2026</div>
+
+  <div class="highlight">
+    <p>🍪 Elegandia utilise des cookies pour améliorer votre expérience. Conformément à la législation belge et européenne (RGPD), nous vous informons de leur utilisation.</p>
+  </div>
+
+  <h2>Qu'est-ce qu'un cookie?</h2>
+  <p>Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez un site web. Il permet de mémoriser vos préférences et d'améliorer votre expérience de navigation.</p>
+
+  <h2>Types de cookies utilisés</h2>
+
+  <table class="cookie-table">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Nom</th>
+        <th>Durée</th>
+        <th>Objectif</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Essentiels</td>
+        <td>lang_pref</td>
+        <td>1 an</td>
+        <td>Mémoriser votre langue préférée</td>
+      </tr>
+      <tr>
+        <td>Analytiques</td>
+        <td>_ga, _gid</td>
+        <td>2 ans</td>
+        <td>Google Analytics — trafic anonyme</td>
+      </tr>
+      <tr>
+        <td>Affiliés</td>
+        <td>awin_track</td>
+        <td>30 jours</td>
+        <td>Suivi des commissions affiliées</td>
+      </tr>
+      <tr>
+        <td>Affiliés</td>
+        <td>amazon_track</td>
+        <td>24h</td>
+        <td>Suivi Amazon Associates</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Gérer vos préférences</h2>
+
+  <div class="toggle-section">
+    <div style="margin-bottom:20px">
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-title">🔒 Cookies essentiels</div>
+          <div class="toggle-sub">Nécessaires au fonctionnement du site</div>
+        </div>
+        <div class="toggle on disabled"></div>
+      </div>
+    </div>
+    <div style="margin-bottom:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06)">
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-title">📊 Cookies analytiques</div>
+          <div class="toggle-sub">Google Analytics — données anonymes</div>
+        </div>
+        <div class="toggle on" id="toggleAnalytics" onclick="toggleCookie(this)"></div>
+      </div>
+    </div>
+    <div style="padding-top:20px;border-top:1px solid rgba(255,255,255,0.06)">
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-title">🤝 Cookies affiliés</div>
+          <div class="toggle-sub">Suivi des liens partenaires</div>
+        </div>
+        <div class="toggle on" id="toggleAffiliate" onclick="toggleCookie(this)"></div>
+      </div>
+    </div>
+    <button class="save-btn" onclick="savePrefs()">Sauvegarder mes préférences</button>
+  </div>
+
+  <h2>Cookies tiers</h2>
+  <p>Nos partenaires peuvent également placer des cookies:</p>
+  <ul>
+    <li><strong>Google Analytics</strong> — analyse du trafic</li>
+    <li><strong>Amazon Associates</strong> — suivi des achats affiliés</li>
+    <li><strong>Awin / TradeTracker</strong> — suivi des commissions</li>
+  </ul>
+
+  <h2>Comment supprimer les cookies?</h2>
+  <p>Vous pouvez supprimer ou bloquer les cookies via les paramètres de votre navigateur:</p>
+  <ul>
+    <li><strong>Chrome:</strong> Paramètres → Confidentialité → Cookies</li>
+    <li><strong>Firefox:</strong> Paramètres → Vie privée → Cookies</li>
+    <li><strong>Safari:</strong> Préférences → Confidentialité</li>
+    <li><strong>Edge:</strong> Paramètres → Confidentialité</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Pour toute question: <a href="mailto:elegandia.official@gmail.com">elegandia.official@gmail.com</a></p>
+</div>
+
+<footer>
+  <div class="footer-logo">ELEGANDIA</div>
+  <div>© 2026 Elegandia.com · Belgique</div>
+  <div>
+    <a href="/privacy.html" style="color:rgba(255,255,255,0.25)">Privacy</a> ·
+    <a href="/contact.html" style="color:rgba(255,255,255,0.25)">Contact</a> ·
+    <a href="/cookies.html" style="color:#C9965A">Cookies</a> ·
+    <a href="/juridique.html" style="color:rgba(255,255,255,0.25)">Juridique</a>
+  </div>
+</footer>
+
+<script>
+function toggleCookie(el) {
+  if (!el.classList.contains('disabled')) {
+    el.classList.toggle('on');
+  }
+}
+function savePrefs() {
+  alert('✅ Vos préférences ont été sauvegardées!');
+}
+</script>
+</body>
+</html>
