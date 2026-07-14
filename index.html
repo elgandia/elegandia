@@ -397,7 +397,7 @@ function showProduct(id) {
       <div><div class="store-price ${s.best ? 'price-best' : 'price-normal'}">${s.price}</div>
       ${s.best ? `<div class="best-label">${t.bestlabel}</div>` : ''}
       ${s.save ? `<div class="save-badge">${s.save}</div>` : ''}</div>
-      <button class="${s.best ? 'btn-shop' : 'btn-view'}" onclick="window.open(s.url || p.amazonUrl, '_blank')">${s.best ? t.buy : t.view}</button>
+     <button class="${s.best ? 'btn-shop' : 'btn-view'}" onclick="window.open('${s.url || p.amazonUrl}', '_blank')">${s.best ? t.buy : t.view}</button>
     </div>`;
   });
   document.getElementById('storeRows').innerHTML = html;
