@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Elegandia | Mode & Beauty Ratgeber Belgien</title>
+<meta name="description" content="Ehrliche Vergleiche, Kaufratgeber und Tipps für Mode & Beauty in Belgien — Sneakers, Parfum, Hautpflege.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#0A0908;color:#fff;min-height:100vh}
+header{background:#141210;border-bottom:1px solid rgba(201,150,90,0.2);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:#C9965A;letter-spacing:4px;text-transform:uppercase;text-decoration:none}
+.logo span{color:#fff;font-style:italic}
+nav{display:flex;gap:24px;align-items:center}
+nav a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;transition:color .2s}
+nav a:hover,nav a.active{color:#C9965A}
+.lang-btns{display:flex;gap:8px}
+.lang-btn{background:none;border:1px solid rgba(201,150,90,0.3);color:rgba(255,255,255,0.5);padding:4px 12px;border-radius:3px;font-size:11px;cursor:pointer;text-decoration:none}
+.lang-btn.active{background:rgba(201,150,90,0.15);color:#C9965A;border-color:rgba(201,150,90,0.5)}
+
+.hero{padding:60px 40px 40px;text-align:center;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center,rgba(201,150,90,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#C9965A;margin-bottom:16px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,56px);font-weight:300;line-height:1.1;margin-bottom:16px}
+.hero h1 em{color:#C9965A;font-style:italic}
+.hero p{font-size:16px;color:rgba(255,255,255,0.5)}
+
+.cats-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:32px 0;padding-bottom:4px}
+.cats-wrap::-webkit-scrollbar{display:none}
+.cats{display:flex;gap:8px;justify-content:center;flex-wrap:nowrap;width:max-content;margin:0 auto;padding:0 40px}
+.cat-btn{background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);padding:8px 20px;border-radius:4px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;white-space:nowrap;flex-shrink:0;text-decoration:none;display:inline-block}
+.cat-btn.active{background:rgba(201,150,90,0.1);border-color:rgba(201,150,90,0.4);color:#C9965A}
+
+.articles-section{max-width:960px;margin:0 auto;padding:0 40px 80px}
+.articles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.article-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:24px;text-decoration:none;color:#fff;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.article-card:hover{border-color:rgba(201,150,90,0.35);background:rgba(255,255,255,0.045)}
+.article-tag{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#C9965A}
+.article-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;line-height:1.25}
+.article-excerpt{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5}
+.article-meta{font-size:11px;color:rgba(255,255,255,0.3);margin-top:auto;padding-top:8px}
+.article-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:32px}
+.article-card.featured .article-title{font-size:28px}
+
+footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32px 40px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.25);flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:16px;color:#C9965A;letter-spacing:3px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.3);text-decoration:none;font-size:11px;transition:color .2s}
+.footer-links a:hover{color:#C9965A}
+
+@media(max-width:700px){
+  header{padding:14px 20px}
+  nav{gap:14px}
+  .hero{padding:40px 20px 30px}
+  .cats{padding:0 20px}
+  .articles-section{padding:0 20px 60px}
+  .articles-grid{grid-template-columns:1fr}
+  .article-card.featured{grid-template-columns:1fr}
+  footer{padding:20px;flex-direction:column;gap:12px;text-align:center}
+  .footer-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Elegan<span>dia</span></a>
+  <nav>
+    <a href="/">Start</a>
+    <a href="/blog/de/" class="active">Blog</a>
+  </nav>
+  <div class="lang-btns">
+    <a href="/blog/" class="lang-btn">FR</a>
+    <a href="/blog/nl/" class="lang-btn">NL</a>
+    <a href="/blog/de/" class="lang-btn active">DE</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-label">🇧🇪 Belgien · Mode & Beauty · Ratgeber & Vergleiche</div>
+  <h1>Der <em>Elegandia</em> Blog</h1>
+  <p>Ehrliche Vergleiche, Tests und Tipps für gute Einkäufe in Belgien</p>
+</section>
+
+<div class="cats-wrap">
+  <div class="cats">
+    <a href="/blog/de/" class="cat-btn active">Alle</a>
+    <a href="/blog/de/?cat=sneakers" class="cat-btn">👟 Sneakers</a>
+    <a href="/blog/de/?cat=parfums" class="cat-btn">🌸 Parfum</a>
+    <a href="/blog/de/?cat=beaute" class="cat-btn">💄 Beauty</a>
+    <a href="/blog/de/?cat=mode" class="cat-btn">👗 Mode</a>
+  </div>
+</div>
+
+<section class="articles-section">
+  <div class="articles-grid">
+
+    <a href="/blog/de/nike-air-max-90-vs-air-force-1.html" class="article-card featured">
+      <div>
+        <div class="article-tag">👟 Sneakers</div>
+        <div class="article-title">Nike Air Max 90 vs Air Force 1: Welche wählen?</div>
+        <div class="article-excerpt">Komfort, Stil, Preis — wir vergleichen die zwei Nike-Ikonen, damit du dich leichter entscheiden kannst, mit den besten belgischen Preisen im Moment.</div>
+        <div class="article-meta">8 Min. Lesezeit · Heute aktualisiert</div>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:64px;text-align:center;opacity:0.15;font-style:italic">VS</div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">ELEGANDIA</div>
+  <div>© 2026 Elegandia.com · Belgien</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Datenschutz</a>
+    <a href="/contact.html">Kontakt</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/juridique.html">Rechtliches</a>
+  </div>
+</footer>
+
+</body>
+</html>
