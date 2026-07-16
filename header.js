@@ -10,6 +10,16 @@
     de: { home: 'Home' }
   }[lang];
 
+  function urlFor(targetLang){
+    if (targetLang === 'fr') {
+      return path.replace('/blog/nl/', '/blog/').replace('/blog/de/', '/blog/');
+    }
+    if (lang === 'fr') {
+      return path.replace('/blog/', '/blog/' + targetLang + '/');
+    }
+    return path.replace('/blog/' + lang + '/', '/blog/' + targetLang + '/');
+  }
+
   document.getElementById('site-header').innerHTML =
     '<a href="/" class="logo">Elegan<span>dia</span></a>' +
     '<nav>' +
@@ -17,9 +27,9 @@
       '<a href="/blog/" class="active">Blog</a>' +
     '</nav>' +
     '<div class="lang-btns">' +
-      '<a href="/blog/" class="lang-btn' + (lang==='fr'?' active':'') + '">FR</a>' +
-      '<a href="/blog/nl/" class="lang-btn' + (lang==='nl'?' active':'') + '">NL</a>' +
-      '<a href="/blog/de/" class="lang-btn' + (lang==='de'?' active':'') + '">DE</a>' +
+      '<a href="' + urlFor('fr') + '" class="lang-btn' + (lang==='fr'?' active':'') + '">FR</a>' +
+      '<a href="' + urlFor('nl') + '" class="lang-btn' + (lang==='nl'?' active':'') + '">NL</a>' +
+      '<a href="' + urlFor('de') + '" class="lang-btn' + (lang==='de'?' active':'') + '">DE</a>' +
     '</div>';
 
   var style = document.createElement('style');
