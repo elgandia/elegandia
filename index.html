@@ -367,6 +367,47 @@ const products = {
       {name:'Courir', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false},
       {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€129,98', best:false}
     ]
+  },
+  paco1million: {
+    title: 'Paco Rabanne 1 Million EDT 100ml — Prix réels 🇧🇪',
+    count: '6 magasins · Mis à jour aujourd\'hui',
+    name: 'Paco Rabanne 1 Million EDT 100ml',
+    brand: 'PACO RABANNE · Parfum Homme',
+    stores: [
+      {name:'🏆 Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€62,00', best:true, save:'Économisez €18!'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€65,99', best:false},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€72,50', best:false},
+      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€78,99', best:false},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€80,00', best:false}
+    ]
+  },
+  lavieestbelle: {
+    title: 'Lancôme La Vie Est Belle EDP 50ml — Prix réels 🇧🇪',
+    count: '5 magasins · Mis à jour aujourd\'hui',
+    name: 'Lancôme La Vie Est Belle EDP 50ml',
+    brand: 'LANCÔME · Parfum Femme',
+    stores: [
+      {name:'🏆 ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€68,90', best:true, save:'Économisez €11!'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€72,49', best:false},
+      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€76,99', best:false},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€79,90', best:false}
+    ]
+  },
+  acquadigio: {
+    title: 'Armani Acqua di Giò EDT 100ml — Prix réels 🇧🇪',
+    count: '6 magasins · Mis à jour aujourd\'hui',
+    name: 'Armani Acqua di Giò EDT 100ml',
+    brand: 'GIORGIO ARMANI · Parfum Homme',
+    stores: [
+      {name:'🏆 Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€74,50', best:true, save:'Économisez €13!'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€77,99', best:false},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€79,90', best:false},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€82,00', best:false},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€84,50', best:false},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€87,50', best:false}
+    ]
   }
 };
 
@@ -417,7 +458,12 @@ function setCat(el) {
   el.classList.add('active');
 }
 
-showProduct('airmax90');
+const hashId = window.location.hash.replace('#', '');
+if (hashId && products[hashId]) {
+  showProduct(hashId);
+} else {
+  showProduct('airmax90');
+}
 </script>
 </body>
 </html>
