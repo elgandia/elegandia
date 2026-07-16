@@ -54,8 +54,7 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
 .footer-links a:hover{color:#C9965A}
 
 @media(max-width:700px){
-  header{padding:14px 20px}
-  .breadcrumb{padding:0 20px}
+ .breadcrumb{padding:0 20px}
   article{padding:20px 20px 40px}
   footer{padding:20px;flex-direction:column;gap:12px;text-align:center}
   .footer-links{justify-content:center}
@@ -64,18 +63,8 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
 </head>
 <body>
 
-<header>
-  <a href="/" class="logo">Elegan<span>dia</span></a>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/blog/nl/" class="active">Blog</a>
-  </nav>
-  <div class="lang-btns">
-    <a href="/blog/parfums-moins-de-100-euros-belgique.html" class="lang-btn">FR</a>
-    <a href="/blog/nl/parfums-moins-de-100-euros-belgique.html" class="lang-btn active">NL</a>
-    <a href="/blog/de/parfums-moins-de-100-euros-belgique.html" class="lang-btn">DE</a>
-  </div>
-</header>
+<header id="site-header"></header>
+<script src="/header.js"></script>
 
 <div class="breadcrumb">
   <a href="/">Home</a> › <a href="/blog/nl/">Blog</a> › Top 5 parfums onder €100
