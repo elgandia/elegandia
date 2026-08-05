@@ -30,21 +30,16 @@ header{background:#141210;border-bottom:1px solid rgba(201,150,90,0.2);padding:1
 .search-box input{flex:1;background:none;border:none;padding:18px 24px;color:#fff;font-size:16px;font-family:'DM Sans',sans-serif;outline:none}
 .search-box input::placeholder{color:rgba(255,255,255,0.3)}
 .search-btn{background:#C9965A;color:#0A0908;border:none;padding:18px 32px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
-
-/* Popular tags - horizontal scroll */
 .popular-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:16px;padding-bottom:4px}
 .popular-wrap::-webkit-scrollbar{display:none}
 .popular{display:flex;gap:8px;justify-content:flex-start;flex-wrap:nowrap;width:max-content;margin:0 auto;padding:0 40px}
 .pop-tag{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);padding:6px 16px;border-radius:20px;font-size:12px;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
 .pop-tag:hover,.pop-tag.active{border-color:rgba(201,150,90,0.4);color:#C9965A}
-
-/* Category buttons - horizontal scroll */
 .cats-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:40px;padding-bottom:4px}
 .cats-wrap::-webkit-scrollbar{display:none}
 .cats{display:flex;gap:8px;justify-content:flex-start;flex-wrap:nowrap;width:max-content;margin:0 auto;padding:0 40px}
 .cat-btn{background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);padding:8px 20px;border-radius:4px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;white-space:nowrap;flex-shrink:0}
 .cat-btn.active{background:rgba(201,150,90,0.1);border-color:rgba(201,150,90,0.4);color:#C9965A}
-
 .results-section{max-width:960px;margin:0 auto;padding:0 40px 80px}
 .results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .results-title{font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff}
@@ -64,8 +59,10 @@ header{background:#141210;border-bottom:1px solid rgba(201,150,90,0.2);padding:1
 .price-normal{color:#fff}
 .best-label{font-size:9px;color:#52C98A;letter-spacing:1px;text-transform:uppercase;text-align:right;margin-top:2px}
 .save-badge{font-size:10px;background:rgba(82,201,138,0.15);color:#52C98A;padding:2px 8px;border-radius:3px;margin-top:3px;text-align:right}
-.btn-shop{background:#C9965A;color:#0A0908;border:none;padding:10px 16px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;text-transform:uppercase}
-.btn-view{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.1);padding:10px 16px;border-radius:5px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%}
+.btn-shop{background:#C9965A;color:#0A0908;border:none;padding:10px 16px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;text-transform:uppercase;text-decoration:none;display:block;text-align:center;line-height:1.4}
+.btn-view{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.1);padding:10px 16px;border-radius:5px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;text-decoration:none;display:block;text-align:center;line-height:1.4}
+.btn-shop:hover{opacity:.85}
+.btn-view:hover{border-color:rgba(201,150,90,0.4);color:#C9965A}
 .alert-bar{background:rgba(201,150,90,0.08);border:1px solid rgba(201,150,90,0.2);border-radius:8px;padding:14px 20px;display:flex;align-items:center;gap:12px;font-size:13px;color:#C9965A;margin-bottom:48px;flex-wrap:wrap}
 .alert-input{flex:1;min-width:150px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:8px 14px;color:#fff;font-size:13px;font-family:'DM Sans',sans-serif;outline:none}
 .alert-btn{background:#C9965A;color:#0A0908;border:none;padding:8px 20px;border-radius:4px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif}
@@ -81,11 +78,10 @@ footer{background:#080706;border-top:1px solid rgba(255,255,255,0.05);padding:32
 .footer-links a:hover{color:#C9965A}
 .affiliate-note{font-size:11px;color:rgba(255,255,255,0.2);text-align:center;padding:12px;border-top:1px solid rgba(255,255,255,0.04)}
 @media(max-width:700px){
- header{padding:14px 20px;flex-wrap:wrap;gap:10px;justify-content:center}
-.logo{font-size:20px}
-nav{gap:10px!important;margin-left:0!important;order:3;width:100%;justify-content:center}
-.lang-btns{gap:6px}
-.lang-btn{padding:3px 8px;font-size:10px}
+  header{padding:14px 20px;flex-wrap:wrap;gap:10px;justify-content:center}
+  .logo{font-size:20px}
+  .lang-btns{gap:6px}
+  .lang-btn{padding:3px 8px;font-size:10px}
   .hero{padding:40px 20px 30px}
   .popular{padding:0 20px}
   .cats{padding:0 20px}
@@ -130,6 +126,9 @@ nav{gap:10px!important;margin-left:0!important;order:3;width:100%;justify-conten
       <span class="pop-tag" onclick="showProduct('adidasSamba')">Adidas Samba</span>
       <span class="pop-tag" onclick="showProduct('adidasgazelle')">Adidas Gazelle</span>
       <span class="pop-tag" onclick="showProduct('airforce1')">Nike Air Force 1</span>
+      <span class="pop-tag" onclick="showProduct('paco1million')">Paco Rabanne 1 Million</span>
+      <span class="pop-tag" onclick="showProduct('lavieestbelle')">Lancôme La Vie Est Belle</span>
+      <span class="pop-tag" onclick="showProduct('acquadigio')">Armani Acqua di Giò</span>
     </div>
   </div>
   <div class="cats-wrap">
@@ -185,10 +184,10 @@ nav{gap:10px!important;margin-left:0!important;order:3;width:100%;justify-conten
   <div class="footer-logo">ELEGANDIA</div>
   <div>© 2026 Elegandia.com · Belgique</div>
   <div class="footer-links">
-   <a href="/privacy.html">Privacy</a>
-   <a href="/contact.html">Contact</a>
-   <a href="/cookies.html">Cookies</a>
-   <a href="/juridique.html">Juridique</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/juridique.html">Juridique</a>
   </div>
 </footer>
 
@@ -261,7 +260,6 @@ function setLang(lang) {
     const key = el.getAttribute('data-i18n-placeholder');
     if (t[key]) el.placeholder = t[key];
   });
-  // Re-render current product with new lang
   const activeTag = document.querySelector('.pop-tag.active');
   if (activeTag) activeTag.click();
 }
@@ -273,14 +271,14 @@ const products = {
     name: 'Nike Air Max 90',
     brand: 'NIKE · Sneakers · Plusieurs coloris',
     stores: [
-      {name:'🏆 Torfs.be', stock:'✓ En stock · Plusieurs coloris', ship:'🚚 Livraison gratuite', price:'€71,99', best:true, save:'Économisez €78!'},
-      {name:'Bol.com', stock:'✓ En stock · Taille 40–46', ship:'🚚 Gratuit dès €20', price:'€98,00', best:false},
-      {name:'Van Haren', stock:'✓ En stock', ship:'🚚 €3,95', price:'€119,99', best:false},
-      {name:'ASOS', stock:'✓ En stock · Multi-coloris', ship:'🚚 Gratuit', price:'€129,99', best:false},
-      {name:'Zalando', stock:'✓ En stock · Multi-coloris', ship:'🚚 Gratuit', price:'€134,95', best:false},
-      {name:'Decathlon', stock:'✓ En stock', ship:'🚚 Gratuit dès €40', price:'€150,00', best:false},
-      {name:'Nike Store', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€149,99', best:false},
-      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€150,00', best:false}
+      {name:'🏆 Torfs.be', stock:'✓ En stock · Plusieurs coloris', ship:'🚚 Livraison gratuite', price:'€71,99', best:true, save:'Économisez €78!', url:'https://www.torfs.be/fr/search?q=nike+air+max+90'},
+      {name:'Bol.com', stock:'✓ En stock · Taille 40–46', ship:'🚚 Gratuit dès €20', price:'€98,00', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=nike+air+max+90'},
+      {name:'Van Haren', stock:'✓ En stock', ship:'🚚 €3,95', price:'€119,99', best:false, url:'https://www.vanharen.nl/search?q=nike+air+max+90'},
+      {name:'ASOS', stock:'✓ En stock · Multi-coloris', ship:'🚚 Gratuit', price:'€129,99', best:false, url:'https://www.asos.com/search/?q=nike+air+max+90'},
+      {name:'Zalando', stock:'✓ En stock · Multi-coloris', ship:'🚚 Gratuit', price:'€134,95', best:false, url:'https://www.zalando.be/nike-air-max-90/'},
+      {name:'Decathlon', stock:'✓ En stock', ship:'🚚 Gratuit dès €40', price:'€150,00', best:false, url:'https://www.decathlon.be/search?Ntt=nike+air+max+90'},
+      {name:'Nike Store', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€149,99', best:false, url:'https://www.nike.com/be/w?q=air+max+90'},
+      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€150,00', best:false, url:'https://www.jdsports.be/search/air-max-90/'}
     ]
   },
   chanel5: {
@@ -289,12 +287,12 @@ const products = {
     name: 'Chanel N°5 Body Lotion 200ml',
     brand: 'CHANEL · Beauté · Soin du Corps',
     stores: [
-      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€59,50', best:true, save:'Économisez €20!'},
-      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€63,99', best:false},
-      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€70,00', best:false},
-      {name:'Chanel.com', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit', price:'€70,00', best:false},
-      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€70,00', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€79,99', best:false}
+      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€59,50', best:true, save:'Économisez €20!', url:'https://www.amazon.com.be/s?k=chanel+n5+body+lotion+200ml'},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€63,99', best:false, url:'https://www.easycosmetic.be/search?q=chanel+n5'},
+      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€70,00', best:false, url:'https://www.douglas.be/fr/search?q=chanel+n5+body+lotion'},
+      {name:'Chanel.com', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit', price:'€70,00', best:false, url:'https://www.chanel.com/fr_BE/fragrance/n5/'},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€70,00', best:false, url:'https://www.iciparisxl.be/fr/search?q=chanel+n5'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€79,99', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=chanel+n5+body+lotion'}
     ]
   },
   diorsauvage: {
@@ -303,12 +301,12 @@ const products = {
     name: 'Dior Sauvage EDT 100ml',
     brand: 'DIOR · Parfum Homme · Eau de Toilette',
     stores: [
-      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€56,99', best:true, save:'Économisez €59!'},
-      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€98,99', best:false},
-      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€113,91', best:false},
-      {name:'Douglas.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€114,95', best:false},
-      {name:'Notino', stock:'✓ En stock · 4.8/5', ship:'🚚 Gratuit dès €25', price:'€116,00', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€116,41', best:false}
+      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€56,99', best:true, save:'Économisez €59!', url:'https://www.amazon.com.be/s?k=dior+sauvage+edt+100ml'},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€98,99', best:false, url:'https://www.easycosmetic.be/search?q=dior+sauvage'},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€113,91', best:false, url:'https://www.iciparisxl.be/fr/search?q=dior+sauvage'},
+      {name:'Douglas.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€114,95', best:false, url:'https://www.douglas.be/fr/search?q=dior+sauvage'},
+      {name:'Notino', stock:'✓ En stock · 4.8/5', ship:'🚚 Gratuit dès €25', price:'€116,00', best:false, url:'https://www.notino.be/dior/sauvage-edt/'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€116,41', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=dior+sauvage+100ml'}
     ]
   },
   adidasSamba: {
@@ -317,13 +315,13 @@ const products = {
     name: 'Adidas Samba OG',
     brand: 'ADIDAS · Sneakers · Classique',
     stores: [
-      {name:'🏆 Bol.com', stock:'✓ En stock · Plusieurs tailles', ship:'🚚 Gratuit dès €20', price:'€100,00', best:true, save:'Économisez €20!'},
-      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€117,31', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€119,95', best:false},
-      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€119,99', best:false},
-      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€120,00', best:false},
-      {name:'Adidas', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€120,00', best:false},
-      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€120,00', best:false}
+      {name:'🏆 Bol.com', stock:'✓ En stock · Plusieurs tailles', ship:'🚚 Gratuit dès €20', price:'€100,00', best:true, save:'Économisez €20!', url:'https://www.bol.com/nl/nl/s/?searchtext=adidas+samba+og'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€117,31', best:false, url:'https://www.amazon.com.be/s?k=adidas+samba+og'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€119,95', best:false, url:'https://www.zalando.be/adidas-samba/'},
+      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€119,99', best:false, url:'https://www.footlocker.be/search?q=adidas+samba'},
+      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€120,00', best:false, url:'https://www.asos.com/search/?q=adidas+samba+og'},
+      {name:'Adidas', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€120,00', best:false, url:'https://www.adidas.be/samba'},
+      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€120,00', best:false, url:'https://www.jdsports.be/search/adidas-samba/'}
     ]
   },
   adidasgazelle: {
@@ -332,28 +330,28 @@ const products = {
     name: 'Adidas Gazelle Dames Lo Pro',
     brand: 'ADIDAS · Sneakers · Femmes',
     stores: [
-      {name:'🏆 ASOS', stock:'✓ En stock · Plusieurs coloris', ship:'🚚 Gratuit', price:'€84,99', best:true, save:'Économisez €45!'},
-      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€119,99', best:false},
-      {name:'Adidas', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€120,00', best:false},
-      {name:'Courir.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false},
-      {name:'Decathlon', stock:'✓ En stock', ship:'🚚 Gratuit dès €40', price:'€120,00', best:false},
-      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€130,00', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€130,00', best:false}
+      {name:'🏆 ASOS', stock:'✓ En stock · Plusieurs coloris', ship:'🚚 Gratuit', price:'€84,99', best:true, save:'Économisez €45!', url:'https://www.asos.com/search/?q=adidas+gazelle'},
+      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€119,99', best:false, url:'https://www.footlocker.be/search?q=adidas+gazelle'},
+      {name:'Adidas', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€120,00', best:false, url:'https://www.adidas.be/gazelle'},
+      {name:'Courir.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false, url:'https://www.courir.com/be/search?q=adidas+gazelle'},
+      {name:'Decathlon', stock:'✓ En stock', ship:'🚚 Gratuit dès €40', price:'€120,00', best:false, url:'https://www.decathlon.be/search?Ntt=adidas+gazelle'},
+      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€130,00', best:false, url:'https://www.jdsports.be/search/adidas-gazelle/'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€130,00', best:false, url:'https://www.zalando.be/adidas-gazelle/'}
     ]
   },
   cerave: {
     title: 'CeraVe Huile Nettoyante Moussante 236ml — Prix réels 🇧🇪',
-    count: '6 magasins · Mis à jour aujourd\'hui',
+    count: '7 magasins · Mis à jour aujourd\'hui',
     name: 'CeraVe Huile Nettoyante Moussante 236ml',
     brand: 'CERAVE · Skincare · Nettoyant Visage',
     stores: [
-      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€8,79', best:true, save:'Économisez €13!'},
-      {name:'Farma Line', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€8,79', best:false},
-      {name:'Pazzox.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€9,85', best:false},
-      {name:'Newpharma', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€12,45', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€13,50', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€16,88', best:false},
-      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€21,99', best:false}
+      {name:'🏆 Amazon', stock:'✓ En stock · Livraison rapide', ship:'🚚 Gratuit Prime', price:'€8,79', best:true, save:'Économisez €13!', url:'https://www.amazon.com.be/s?k=cerave+huile+nettoyante+236ml'},
+      {name:'Farma Line', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€8,79', best:false, url:'https://www.farmaline.be/search?q=cerave'},
+      {name:'Pazzox.be', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€9,85', best:false, url:'https://www.pazzox.be/search?q=cerave'},
+      {name:'Newpharma', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€12,45', best:false, url:'https://www.newpharma.be/search?q=cerave'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€13,50', best:false, url:'https://www.zalando.be/cerave/'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€16,88', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=cerave+huile+nettoyante'},
+      {name:'ASOS', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€21,99', best:false, url:'https://www.asos.com/search/?q=cerave'}
     ]
   },
   airforce1: {
@@ -362,14 +360,14 @@ const products = {
     name: 'Nike Air Force 1 \'07 Men',
     brand: 'NIKE · Sneakers · Hommes',
     stores: [
-      {name:'🏆 Van Haren', stock:'✓ En stock', ship:'🚚 €3,95', price:'€79,99', best:true, save:'Économisez €50!'},
-      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€101,95', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€101,95', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€114,95', best:false},
-      {name:'Nike', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€119,99', best:false},
-      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€120,00', best:false},
-      {name:'Courir', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false},
-      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€129,98', best:false}
+      {name:'🏆 Van Haren', stock:'✓ En stock', ship:'🚚 €3,95', price:'€79,99', best:true, save:'Économisez €50!', url:'https://www.vanharen.nl/search?q=nike+air+force+1'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€101,95', best:false, url:'https://www.amazon.com.be/s?k=nike+air+force+1+07'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€101,95', best:false, url:'https://www.zalando.be/nike-air-force-1/'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€114,95', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=nike+air+force+1'},
+      {name:'Nike', stock:'✓ En stock · Officiel', ship:'🚚 Gratuit dès €50', price:'€119,99', best:false, url:'https://www.nike.com/be/w?q=air+force+1'},
+      {name:'JD Sports', stock:'✓ En stock', ship:'🚚 €4,99', price:'€120,00', best:false, url:'https://www.jdsports.be/search/air-force-1/'},
+      {name:'Courir', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€120,00', best:false, url:'https://www.courir.com/be/search?q=nike+air+force+1'},
+      {name:'Foot Locker', stock:'✓ En stock', ship:'🚚 €4,99', price:'€129,98', best:false, url:'https://www.footlocker.be/search?q=nike+air+force+1'}
     ]
   },
   paco1million: {
@@ -378,12 +376,12 @@ const products = {
     name: 'Paco Rabanne 1 Million EDT 100ml',
     brand: 'PACO RABANNE · Parfum Homme',
     stores: [
-      {name:'🏆 Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€62,00', best:true, save:'Économisez €18!'},
-      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€65,99', best:false},
-      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€72,50', best:false},
-      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false},
-      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€78,99', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€80,00', best:false}
+      {name:'🏆 Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€62,00', best:true, save:'Économisez €18!', url:'https://www.bol.com/nl/nl/s/?searchtext=paco+rabanne+1+million+100ml'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€65,99', best:false, url:'https://www.amazon.com.be/s?k=paco+rabanne+1+million+100ml'},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€72,50', best:false, url:'https://www.iciparisxl.be/fr/search?q=paco+rabanne+1+million'},
+      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false, url:'https://www.douglas.be/fr/search?q=paco+rabanne+1+million'},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€78,99', best:false, url:'https://www.easycosmetic.be/search?q=paco+rabanne+1+million'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€80,00', best:false, url:'https://www.zalando.be/paco-rabanne-1-million/'}
     ]
   },
   lavieestbelle: {
@@ -392,11 +390,11 @@ const products = {
     name: 'Lancôme La Vie Est Belle EDP 50ml',
     brand: 'LANCÔME · Parfum Femme',
     stores: [
-      {name:'🏆 ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€68,90', best:true, save:'Économisez €11!'},
-      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€72,49', best:false},
-      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false},
-      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€76,99', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€79,90', best:false}
+      {name:'🏆 ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€68,90', best:true, save:'Économisez €11!', url:'https://www.iciparisxl.be/fr/search?q=lancome+la+vie+est+belle'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€72,49', best:false, url:'https://www.amazon.com.be/s?k=lancome+la+vie+est+belle+50ml'},
+      {name:'Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€75,00', best:false, url:'https://www.douglas.be/fr/search?q=lancome+la+vie+est+belle'},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€76,99', best:false, url:'https://www.easycosmetic.be/search?q=lancome+la+vie+est+belle'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€79,90', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=lancome+la+vie+est+belle'}
     ]
   },
   acquadigio: {
@@ -405,12 +403,12 @@ const products = {
     name: 'Armani Acqua di Giò EDT 100ml',
     brand: 'GIORGIO ARMANI · Parfum Homme',
     stores: [
-      {name:'🏆 Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€74,50', best:true, save:'Économisez €13!'},
-      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€77,99', best:false},
-      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€79,90', best:false},
-      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€82,00', best:false},
-      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€84,50', best:false},
-      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€87,50', best:false}
+      {name:'🏆 Douglas', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€74,50', best:true, save:'Économisez €13!', url:'https://www.douglas.be/fr/search?q=armani+acqua+di+gio'},
+      {name:'Amazon', stock:'✓ En stock', ship:'🚚 Gratuit Prime', price:'€77,99', best:false, url:'https://www.amazon.com.be/s?k=armani+acqua+di+gio+100ml'},
+      {name:'ICI PARIS XL', stock:'✓ En stock', ship:'🚚 Gratuit dès €30', price:'€79,90', best:false, url:'https://www.iciparisxl.be/fr/search?q=acqua+di+gio'},
+      {name:'Easy Cosmetic', stock:'✓ En stock', ship:'🚚 Gratuit dès €25', price:'€82,00', best:false, url:'https://www.easycosmetic.be/search?q=acqua+di+gio'},
+      {name:'Bol.com', stock:'✓ En stock', ship:'🚚 Gratuit dès €20', price:'€84,50', best:false, url:'https://www.bol.com/nl/nl/s/?searchtext=armani+acqua+di+gio'},
+      {name:'Zalando', stock:'✓ En stock', ship:'🚚 Gratuit', price:'€87,50', best:false, url:'https://www.zalando.be/armani-acqua-di-gio/'}
     ]
   }
 };
@@ -423,7 +421,7 @@ function showProduct(id) {
   currentProductId = id;
   document.querySelectorAll('.pop-tag').forEach(t => t.classList.remove('active'));
   const tags = document.querySelectorAll('.pop-tag');
-  const ids = ['airmax90','chanel5','diorsauvage','adidasSamba','adidasgazelle','airforce1'];
+  const ids = Object.keys(products);
   const idx = ids.indexOf(id);
   if (idx >= 0 && tags[idx]) tags[idx].classList.add('active');
 
@@ -440,7 +438,7 @@ function showProduct(id) {
       <div><div class="store-price ${s.best ? 'price-best' : 'price-normal'}">${s.price}</div>
       ${s.best ? `<div class="best-label">${t.bestlabel}</div>` : ''}
       ${s.save ? `<div class="save-badge">${s.save}</div>` : ''}</div>
-      <button class="${s.best ? 'btn-shop' : 'btn-view'}">${s.best ? t.buy : t.view}</button>
+      <a href="${s.url}" target="_blank" rel="noopener" class="${s.best ? 'btn-shop' : 'btn-view'}">${s.best ? t.buy : t.view}</a>
     </div>`;
   });
   document.getElementById('storeRows').innerHTML = html;
@@ -455,6 +453,9 @@ function doSearch() {
   else if (q.includes('gazelle')) showProduct('adidasgazelle');
   else if (q.includes('cerave')) showProduct('cerave');
   else if (q.includes('air force') || q.includes('airforce')) showProduct('airforce1');
+  else if (q.includes('paco') || q.includes('million')) showProduct('paco1million');
+  else if (q.includes('lancome') || q.includes('vie est belle')) showProduct('lavieestbelle');
+  else if (q.includes('acqua') || q.includes('armani')) showProduct('acquadigio');
 }
 
 function setCat(el) {
@@ -471,4 +472,3 @@ if (hashId && products[hashId]) {
 </script>
 </body>
 </html>
-
